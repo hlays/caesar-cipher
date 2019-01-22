@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <section id="">
+      <h1>Cipher Laboratoria</h1>
+      <a href="#cipher">CIFRAR</a>
+      <a href="#decipher">DESCIFRAR</a>
+    </section>
+    <section id="cipher">
+      <h1>Cifrar</h1>
+      <p>
+        Informe o deslocamento:
+      </p>
+      <input type="range" min="3" max="27">
+      <p id="showRange"></p>
+      <p>
+        Digite o texto a ser cifrado:
+      </p>
+      <input id="cipher-this" type="text">
+      <h2>Resultado:</h2>
+      <p id="cipherResult"></p>
+    </section>
+    <section id="decipher">
+      <h1>Descifrar</h1>
+      <p>
+        Informe o deslocamento:
+      </p>
+      <input id="rangeValue" type="range" min="3" max="27">
+      <p id="showRange"></p>
+      <p>
+        Digite o texto a ser descifrado:
+      </p>
+      <input id="decipher-this" type="text">
+      <h2>Resultado:</h2>
+      <p id="decipherResult"></p>
+    </section>
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>
