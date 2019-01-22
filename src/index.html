@@ -11,13 +11,16 @@
       <a href="#cipher">CIFRAR</a>
       <a href="#decipher">DESCIFRAR</a>
     </section>
+<hr>
+
     <section id="cipher">
       <h1>Cifrar</h1>
       <p>
         Informe o deslocamento:
       </p>
-      <input type="range" min="3" max="27">
-      <p id="showRange"></p>
+      <input type="range" name="cipher" id="range_cipher" value="3" min="1" max="27" oninput="range_cipher_disp.value = range_cipher.value">
+      <output  id="range_cipher_disp"></output>
+
       <p>
         Digite o texto a ser cifrado:
       </p>
@@ -25,13 +28,15 @@
       <h2>Resultado:</h2>
       <p id="cipherResult"></p>
     </section>
+
+<hr>
     <section id="decipher">
       <h1>Descifrar</h1>
       <p>
         Informe o deslocamento:
       </p>
-      <input id="rangeValue" type="range" min="3" max="27">
-      <p id="showRange"></p>
+      <input type="range" name="decipher" id="range_decipher" value="3" min="1" max="27" oninput="range_decipher_disp.value = range_decipher.value">
+      <output  id="range_decipher_disp"></output>
       <p>
         Digite o texto a ser descifrado:
       </p>
