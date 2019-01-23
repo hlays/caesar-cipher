@@ -1,0 +1,14 @@
+html {
+  text-align: center;
+}
+
+.bar-code-title {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 3em;
+}
+
+button {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+}

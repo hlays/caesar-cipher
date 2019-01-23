@@ -7,18 +7,20 @@
   </head>
   <body>
     <section id="">
-      <h1>Cipher Laboratoria</h1>
-      <a href="#cipher">CIFRAR</a>
-      <a href="#decipher">DESCIFRAR</a>
+      <h1 class="bar-code-title">Cipher Laboratoria</h1>
+      <a href="#cipher"><button class="choice"><i class="fas fa-lock"></i>&ensp;CIFRAR</button></a>
+      <a href="#decipher"><button class="choice"><i class="fas fa-lock-open"></i>&ensp;DESCIFRAR</button></a>
+      <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </section>
 <hr>
 
     <section id="cipher">
       <h1>Cifrar</h1>
       <p>
-        Informe o deslocamento:
+        <i class="fab fa-keycdn"></i>&ensp;Informe o deslocamento:
       </p>
-      <input type="range" name="cipher" id="range_cipher" value="3" min="1" max="27" oninput="range_cipher_disp.value = range_cipher.value">
+      <input type="range" name="cipher" id="range_cipher" value="3" min="1" max="1000" oninput="range_cipher_disp.value = range_cipher.value">
       <output  id="range_cipher_disp"></output>
 
       <p>
@@ -33,9 +35,9 @@
     <section id="decipher">
       <h1>Descifrar</h1>
       <p>
-        Informe o deslocamento:
+        <i class="fab fa-keycdn"></i>&ensp;Informe o deslocamento:
       </p>
-      <input type="range" name="decipher" id="range_decipher" value="3" min="1" max="27" oninput="range_decipher_disp.value = range_decipher.value">
+      <input type="range" name="decipher" id="range_decipher" value="3" min="1" max="1000" oninput="range_decipher_disp.value = range_decipher.value">
       <output  id="range_decipher_disp"></output>
       <p>
         Digite o texto a ser descifrado:
@@ -45,5 +47,6 @@
       <p id="decipherResult"></p>
     </section>
     <script src="cipher.js"></script>
+    <script src="tests.js"></script>
   </body>
 </html>
