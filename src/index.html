@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
   <body>
-    <section id="">
+    <section id="cipher-or-decipher">
       <h1 class="bar-code-title">Cipher Laboratoria</h1>
       <a href="#cipher"><button class="choice"><i class="fas fa-lock"></i>&ensp;CIFRAR</button></a>
       <a href="#decipher"><button class="choice"><i class="fas fa-lock-open"></i>&ensp;DESCIFRAR</button></a>
@@ -21,15 +21,14 @@
       <p>
         <i class="fab fa-keycdn"></i>&ensp;Informe o deslocamento:
       </p>
-      <input type="range" name="cipher" id="range_cipher" value="3" min="1" max="1000" oninput="range_cipher_disp.value = range_cipher.value">
-      <output  id="range_cipher_disp"></output>
-
+      <input id="cipher-offset" type="number" name="cipher" min="1" max="1000">
       <p>
         Digite o texto a ser cifrado:
       </p>
-      <input id="cipher-this" type="text">
+      <input id="cipher-text" type="text">
       <h2>Resultado:</h2>
-      <p id="cipherResult"></p>
+      <p id="cipher-result"></p>
+      <button id="cipher-button"><i class="fas fa-lock"></i>&ensp;Cifrar!</button>
     </section>
 
 <hr>

@@ -29,3 +29,11 @@ button {
   padding: 10px;
   margin: 20px;
 }
+
+section {
+  height: 100vw;
+}
+
+#cipher-or-decipher {
+  margin-top: 25%;
+}
