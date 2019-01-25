@@ -23,12 +23,14 @@
       </p>
       <input id="cipher-offset" type="number" name="cipher" min="1" max="1000">
       <p>
-        Digite o texto a ser cifrado:
+        Digite a mensagem a ser cifrada:
+      </p>
+      <p class="obs">
+        Atenção: Não incluir acentos, pontuação e números.
       </p>
       <input id="cipher-text" type="text">
       <h2>Resultado:</h2>
-      <p id="cipher-result"></p>
-      <button id="cipher-button"><i class="fas fa-lock"></i>&ensp;Cifrar!</button>
+      <input id="cipher-result"></input>
     </section>
 
 <hr>
@@ -37,10 +39,13 @@
       <p>
         <i class="fab fa-keycdn"></i>&ensp;Informe o deslocamento:
       </p>
-      <input type="range" name="decipher" id="range_decipher" value="3" min="1" max="1000" oninput="range_decipher_disp.value = range_decipher.value">
+      <input type="range" name="decipher" id="range_decipher" min="1" max="2" oninput="range_decipher_disp.value = range_decipher.value">
       <output  id="range_decipher_disp"></output>
       <p>
-        Digite o texto a ser descifrado:
+        Digite a mensagem a ser descifrada:
+      </p>
+      <p class="obs">
+        Atenção: Não incluir acentos, pontuação e números.
       </p>
       <input id="decipher-this" type="text">
       <h2>Resultado:</h2>

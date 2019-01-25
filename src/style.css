@@ -18,6 +18,11 @@ p {
   font-size: 2em;
 }
 
+.obs {
+  font-size: 1em;
+  font-style: italic;
+}
+
 input {
   border-radius: 20px;
   padding: 10px;
