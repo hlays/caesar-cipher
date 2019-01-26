@@ -18,7 +18,7 @@ function encode(encodeOffset, encodeText) {
         letterOffset = 32;
       // se número
       } else if (encodeText.charCodeAt(i) >= 48 && encodeText.charCodeAt(i) <= 57) {
-        letterOffset = (((encodeText.charCodeAt(i) - 48) + encodeOffset) % 26) + 48;
+        letterOffset = (((encodeText.charCodeAt(i) - 48) + encodeOffset) % 10) + 48;
       } 
       textEncode = textEncode + String.fromCharCode(letterOffset);
     }
@@ -31,10 +31,12 @@ function encode(encodeOffset, encodeText) {
 // teste:
 console.log('---------------ENCODE---------------------');
 
+console.log('=> resultado', encode(250, 'J')); // => Z
+console.log('=> resultado', encode(350, 'Joao Oliveira')); // => Vama Axuhqudm
 console.log('=> resultado', encode(2, 'Hello world')); // => Jgnnq yqtnf
 console.log('=> resultado', encode(2, 'alo ola')); // => cnq qnc
-console.log('=> resultado', encode(2, 'Numero 1580')); // => Pwogtq 37:2
-console.log('=> resultado', encode(2, 'Numero 3')); // => Pwogtq 5
+console.log('=> resultado', encode(2, 'Numeros 12345')); // => Pwogtqu 34567
+console.log('=> resultado', encode(27, 'Numero 3')); // => Dkcuhe 3
 // console.log('=> resultado', encode(2, '')); // => alert
 // console.log('=> resultado', encode(0, 'Olá')); // => alert
 
@@ -58,7 +60,7 @@ function decode(decodeOffset, decodeText) {
         decodeLetterOffset = 32;
       // se número
       } else if (decodeText.charCodeAt(i) >= 48 && decodeText.charCodeAt(i) <= 57) {
-        decodeLetterOffset = (((decodeText.charCodeAt(i) - 48) - decodeOffset) % 26) + 48;
+        decodeLetterOffset = (((decodeText.charCodeAt(i) - 48) - decodeOffset) % 10) + 48;
       } 
       textDecode = textDecode + String.fromCharCode(decodeLetterOffset);
     }
@@ -66,12 +68,13 @@ function decode(decodeOffset, decodeText) {
   }
 }
 
-
-
 // teste:
 console.log('---------------DECODE---------------------');
 
+console.log('=> resultado', decode(250, 'Z')); // => J
+console.log('=> resultado', decode(350, 'Vama Axuhqudm')); // => Joao
+
 console.log('=> resultado', decode(2, 'Jgnnq yqtnf')); // => Hello world
 console.log('=> resultado', decode(2, 'cnq qnc')); // => alo ola
-console.log('=> resultado', decode(2, 'Pwogtq 37:2')); // => Numero 1580
-console.log('=> resultado', decode(2, 'Pwogtq 5')); // => Numero 3
+console.log('=> resultado', decode(2, 'Pwogtqu 34567')); // => Numero 1580
+console.log('=> resultado', decode(27, 'Dkcuhe 3')); // => Numero 3
