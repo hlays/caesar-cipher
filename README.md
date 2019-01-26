@@ -10,7 +10,7 @@ decide criar uma aplicação que permita enviar mensagens criptografadas e depoi
 descriptografar. Então agora é a hora de aplicar os seus super poderes 😎
 
 ## Usuários
-Através do prefácio adotado, considera-se so usuários como familiares e amigos (pessoas próximas), entre adolescentes e adultos, de todos os sexos, que estarão engajados na organização da festa surpresa.
+Através do prefácio adotado, considera-se os usuários como familiares e amigos (pessoas próximas), entre adolescentes e adultos, de todos os sexos, que estarão engajados na organização da festa surpresa.
 
 Dessa forma, o desenvolvimento da interface foi realizado,procurando proporcionar uma usabilidade intuitiva e simples, para que o usuário possa fazer uso da aplicação com facilidade e rapidez.
 

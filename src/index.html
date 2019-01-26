@@ -16,41 +16,42 @@
     </section>
 <hr>
 
-    <section id="cipher">
+    <section id="encode">
       <h1>Cifrar</h1>
       <p>
         <i class="fab fa-keycdn"></i>&ensp;Informe o deslocamento:
       </p>
-      <input id="cipher-offset" type="number" name="cipher" min="1" max="1000">
+      <input id="encode-offset" type="number" name="encode" min="1" max="1000">
       <p>
         Digite a mensagem a ser cifrada:
       </p>
       <p class="obs">
         Atenção: Não incluir acentos, pontuação e números.
       </p>
-      <input id="cipher-text" type="text">
+      <input id="encode-text" type="text">
       <h2>Resultado:</h2>
-      <input id="cipher-result"></input>
+      <input id="encode-result"></input>
     </section>
 
 <hr>
-    <section id="decipher">
+
+    <section id="decode">
       <h1>Descifrar</h1>
       <p>
         <i class="fab fa-keycdn"></i>&ensp;Informe o deslocamento:
       </p>
-      <input type="range" name="decipher" id="range_decipher" min="1" max="2" oninput="range_decipher_disp.value = range_decipher.value">
-      <output  id="range_decipher_disp"></output>
+      <input id="decode-offset" type="number" name="decode" min="1" max="1000">
       <p>
-        Digite a mensagem a ser descifrada:
+        Digite a mensagem a ser cifrada:
       </p>
       <p class="obs">
         Atenção: Não incluir acentos, pontuação e números.
       </p>
-      <input id="decipher-this" type="text">
+      <input id="decode-text" type="text">
       <h2>Resultado:</h2>
-      <p id="decipherResult"></p>
+      <input id="decode-result"></input>
     </section>
+
     <script src="cipher.js"></script>
     <script src="tests.js"></script>
   </body>

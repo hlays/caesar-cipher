@@ -1,35 +1,30 @@
-function cipher(cipherOffset, cipherThis) {
-  if (cipherOffset < 1 || cipherThis.length < 1) {
-    alert(':/ Dados inseridos inválidos. Tente de novo...');
+function encode(encodeOffset, encodeText) {
+  if (encodeOffset < 1 || encodeText.length < 1) {
+    // alert(':/ Dados inseridos inválidos. Tente de novo...');
   } else {
     
-    const arrCiphered = [];
+    let letterOffset;
+    let textEncode = '';
+
     // Se uppercase
-    for (i in cipherThis) {    
-      let arrCipher = [];
-      if (cipherThis[i] >= 65 && cipherThis[i] <= 90) {
-        let letterOffset = ((cipherThis[i].charCodeAt() - 65 + cipherOffset) % 26) + 65;
-        arrCipher.push(letterOffset);
-        for (i in arrCipher) {
-          return String.fromCharCode.apply(null, arrCipher);
-        } 
+    for (let i = 0; i < encodeText.length; i++) {    
+      if (encodeText.charCodeAt(i) >= 65 && encodeText.charCodeAt(i)  <= 90) {
+        letterOffset = (((encodeText.charCodeAt(i) - 65) + encodeOffset) % 26) + 65;
+      
     // se lowercase
-      } else if (cipherThis[i] >= 97 && cipherThis[i] <= 122) {
-        for (i in cipherThis) {    
-          let arrCipher = [];
-          let letterOffset = ((cipherThis[i].charCodeAt() - 97 + cipherOffset) % 26) + 97;
-          arrCipher.push(letterOffset);
-        }
-        const arrCiphered = [];
-        for (i in arrCipher) {
-          return String.fromCharCode.apply(null, arrCipher);
-        } 
-      } 
-    } 
+      } else if (encodeText.charCodeAt(i)  >= 97 && encodeText.charCodeAt(i) <= 122) {
+        letterOffset = (((encodeText.charCodeAt(i) - 97) + encodeOffset) % 26) + 97;
+      } else if (encodeText.charCodeAt(i) === 32) {
+        letterOffset = 32;
+      }
+      textEncode = textEncode + String.fromCharCode(letterOffset);
+    }
+    return textEncode;
   }
 }
 
-
 // teste:
-console.log('=> resultado', cipher(2, 'ALO')); // => CNQ
-console.log('=> resultado', cipher(2, 'alo')); // => CNQ
+console.log('=> resultado', encode(2, 'Hello world')); // => Jgnnq yqtnf
+console.log('=> resultado', encode(2, 'alo')); // => cnq
+// console.log('=> resultado', encode(2, '')); // => alert
+// console.log('=> resultado', encode(0, 'Olá')); // => alert
