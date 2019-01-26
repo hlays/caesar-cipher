@@ -3,7 +3,6 @@ console.log('=> começou ;)');
 
 function encode(encodeOffset, encodeText) {
   console.log('=> Entrou na função');
-  // console.log('=> encodeOffset ', encodeOffset);
   console.log('=> encodeText ', encodeText);
   console.log('=> encodeOffset ', encodeOffset);
   
