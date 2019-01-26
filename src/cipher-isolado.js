@@ -31,12 +31,14 @@ function encode(encodeOffset, encodeText) {
 // teste:
 console.log('---------------ENCODE---------------------');
 
-console.log('=> resultado', encode(250, 'J')); // => Z
-console.log('=> resultado', encode(350, 'Joao Oliveira')); // => Vama Axuhqudm
+console.log('=> resultado (5)', encode(5, 'J')); // => O
+console.log('=> resultado (25)', encode(25, 'Joao Oliveira')); // => Inzn Nkhudhqz
+console.log('=> resultado (250)', encode(250, 'J')); // => Z
+console.log('=> resultado (250)', encode(250, 'Joao Oliveira')); // => Zeqe Ebyluyhq
 console.log('=> resultado', encode(2, 'Hello world')); // => Jgnnq yqtnf
 console.log('=> resultado', encode(2, 'alo ola')); // => cnq qnc
 console.log('=> resultado', encode(2, 'Numeros 12345')); // => Pwogtqu 34567
-console.log('=> resultado', encode(27, 'Numero 3')); // => Dkcuhe 3
+console.log('=> resultado', encode(27, 'Numero 3')); // => Ovnfsp 0
 // console.log('=> resultado', encode(2, '')); // => alert
 // console.log('=> resultado', encode(0, 'Olá')); // => alert
 
@@ -71,10 +73,11 @@ function decode(decodeOffset, decodeText) {
 // teste:
 console.log('---------------DECODE---------------------');
 
-console.log('=> resultado', decode(250, 'Z')); // => J
-console.log('=> resultado', decode(350, 'Vama Axuhqudm')); // => Joao
-
+console.log('=> resultado (5)', decode(5, 'D')); // => J
+console.log('=> resultado (25)', decode(25, 'Inzn Nkhudhqz')); // => Inzn Oliveira
+console.log('=> resultado (250)', decode(250, 'Z')); // => J
+console.log('=> resultado (250)', decode(250, 'Zeqe Ebyluyhq')); // => Joao Oliveira
 console.log('=> resultado', decode(2, 'Jgnnq yqtnf')); // => Hello world
 console.log('=> resultado', decode(2, 'cnq qnc')); // => alo ola
 console.log('=> resultado', decode(2, 'Pwogtqu 34567')); // => Numero 1580
-console.log('=> resultado', decode(27, 'Dkcuhe 3')); // => Numero 3
+console.log('=> resultado', decode(27, 'Ovnfsp 0')); // => Numero 3
