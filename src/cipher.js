@@ -1,37 +1,55 @@
-window.onload = (function () {
-  let encodeOffset = document.querySelector('#encode-offset > input');
-  let encodeText = document.querySelector('#encode-text > input');
-  let encodeResult = document.getElementById('encode-result');
+console.log('=> começou ;)');
 
-  function encode(encodeOffset, encodeText) {
-    if (encodeOffset < 1 || encodeText.length < 1) {
-      // alert(':/ Dados inseridos inválidos. Tente de novo...');
-    } else {
-      
-      let letterOffset;
-      let textEncode = '';
+
+function encode(encodeOffset, encodeText) {
+  console.log('=> Entrou na função');
+  // console.log('=> encodeOffset ', encodeOffset);
+  console.log('=> encodeText ', encodeText);
+  console.log('=> encodeOffset ', encodeOffset);
   
-      // Se uppercase
-      for (let i = 0; i < encodeText.length; i++) {    
-        if (encodeText.charCodeAt(i) >= 65 && encodeText.charCodeAt(i)  <= 90) {
-          letterOffset = (((encodeText.charCodeAt(i) - 65) + encodeOffset) % 26) + 65;
-        
-      // se lowercase
-        } else if (encodeText.charCodeAt(i)  >= 97 && encodeText.charCodeAt(i) <= 122) {
-          letterOffset = (((encodeText.charCodeAt(i) - 97) + encodeOffset) % 26) + 97;
-        } else if (encodeText.charCodeAt(i) === 32) {
-          letterOffset = 32;
-        }
-        textEncode = textEncode + String.fromCharCode(letterOffset);
-      }
-      return textEncode;
-    }
+  let letterOffset;
+  let textEncode = '';
+  
+  for (let i = 0; i < encodeText.length; i++) {    
+    // Se uppercase
+    if (encodeText.charCodeAt(i) >= 65 && encodeText.charCodeAt(i)  <= 90) {
+      letterOffset = (((encodeText.charCodeAt(i) - 65) + encodeOffset) % 26) + 65;
+      console.log('=> uppercase', letterOffset);
+
+    // se lowercase
+    } else if (encodeText.charCodeAt(i)  >= 97 && encodeText.charCodeAt(i) <= 122) {
+      letterOffset = (((encodeText.charCodeAt(i) - 97) + encodeOffset) % 26) + 97;
+      console.log('=> lowercase', letterOffset);
+
+    // se espaço
+    } else if (encodeText.charCodeAt(i) === 32) {
+      letterOffset = 32;
+      console.log('=> espaço', letterOffset);
+
+    // se número
+    } else if (encodeText.charCodeAt(i) >= 48 && encodeText.charCodeAt(i) <= 57) {
+      letterOffset = (((encodeText.charCodeAt(i) - 48) + encodeOffset) % 26) + 48;
+      console.log('=> número', letterOffset);
+    } 
+    return textEncode + String.fromCharCode(letterOffset);
+    console.log('=> textencode', textEncode);
   }
 
+}
 
-  encodeText.addEventListener('input', encode);
-})() 
+function cipher() {
+  let offset = document.getElementById('encode-offset').value;
+  // let offset = document.querySelector('#encode-offset > input');
+  let text = document.getElementById('encode-text').value;
+  // let text = document.querySelector('#encode-text > input');
+  let encodeResult = document.getElementById('encode-result');
 
+  const x = encode(offset, text);
 
+  encodeResult.value = x;
 
+  console.log('=> Terminou!');
 
+}
+
+// encodeText.addEventListener('input', encode, false);

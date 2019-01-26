@@ -11,8 +11,8 @@
   <body>
     <section id="cipher-or-decipher">
       <h1 class="bar-code-title">Cipher Laboratoria</h1>
-      <a href="#cipher"><button class="choice"><i class="fas fa-lock"></i>&ensp;CIFRAR</button></a>
-      <a href="#decipher"><button class="choice"><i class="fas fa-lock-open"></i>&ensp;DESCIFRAR</button></a>
+      <a href="#encode"><button class="choice"><i class="fas fa-lock"></i>&ensp;CIFRAR</button></a>
+      <a href="#decode"><button class="choice"><i class="fas fa-lock-open"></i>&ensp;DESCIFRAR</button></a>
     </section>
 <hr>
 
@@ -28,7 +28,7 @@
       <p class="obs">
         Atenção: Não incluir acentos, pontuação e números.
       </p>
-      <input id="encode-text" type="text">
+      <input id="encode-text" type="text" oninput="encode()">
       <h2>Resultado:</h2>
       <input id="encode-result"></input>
     </section>
