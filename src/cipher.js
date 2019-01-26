@@ -26,6 +26,3 @@ window.onload = (function () {
 
 
 
-// console.log('resultado', cipher(2, 'ALO'));
-
-
