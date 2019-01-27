@@ -40,17 +40,17 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 
 ### Parte Obrigatória
 
-* [ ] `README.md` com explicações e desenho do projeto
-* [ ] Usar VanillaJS.
-* [ ] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
+* [x] `README.md` com explicações e desenho do projeto
+* [x] Usar VanillaJS.
+* [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   cifrado.
 * [ ] Mostrar o resultado da cifra corretamente.
-* [ ] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
+* [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   descifrado.
 * [ ] Mostrar o resultado descifrado corretamente.
-* [ ] Permitir escolher o `offset` (_deslocamento_) a ser usado na
+* [x] Permitir escolher o `offset` (_deslocamento_) a ser usado na
   cifragem/descifragem.
-* [ ] Implementa `cipher.encode`.
+* [x] Implementa `cipher.encode`.
 * [ ] Implementa `cipher.decode`.
 * [ ] Criar testes unitários.
 

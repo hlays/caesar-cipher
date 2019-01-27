@@ -7,6 +7,8 @@ html {
   background-size: cover;
 }
 
+/* Navbar
+---------------------*/
 header {
   position: fixed;
   top: 0;
@@ -34,10 +36,16 @@ a {
   font-size: 1.5em;
   color: rgb(228, 193, 127);
 }
+/*----------------------------*/
 
 .bar-code-title {
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 5em;
+}
+
+#home {
+  margin-top: 20%;
+  height: 100vw;
 }
 
 h1 {
@@ -56,17 +64,13 @@ p {
 }
 
 input, button {
+  font-size: 16px;
   border-radius: 20px;
   padding: 15px;
   margin: 10px;
   text-align: center;
   background-color: #E2BD66;
   color: rgb(26, 8, 2);
-}
-
-#home {
-  margin-top: 20%;
-  height: 100vw;
 }
 
 #encode, #decode {
@@ -90,4 +94,34 @@ input, button {
 #instructions h2, h3 {
   font-size: 2.1em;
   text-align: center;
+}
+
+@media (max-width: 415px) {
+  section {
+    height: 100vh;
+  }
+
+  p {
+    font-size: 2.5em;
+  }
+
+  input {
+    font-size: 1.2em;
+  }
+  
+  button {
+    font-size: 1em;
+  }
+
+  body {
+    background-color: rgba(252, 255, 226, 0.1);
+  }
+
+  .bar-code-title {
+    font-size: 6em;
+  }
+
+  #encode, #decode {
+  margin-top: 50%;
+  }
 }
