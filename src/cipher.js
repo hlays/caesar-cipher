@@ -1,17 +1,31 @@
 console.log('=> começou ;)');
-let encodeOffset = document.getElementById('encode-offset').value;
-// let encodeOffset = document.querySelector('#encode-offset > input');
-let encodeText = document.getElementById('encode-text').value;
-// let encodeText = document.querySelector('#encode-text > input');
-let encodeResult = document.getElementById('encode-result');
+
+function cipher() {
+  let eOffset = document.getElementById('encode-offset').value;
+  let eText = document.getElementById('encode-text').value;
+  let encodeResult = encode(eOffset, eText);
+  
+  document.getElementById('encode-result').value = encodeResult;
+}
+
+
+function decipher() {
+  let dOffset = document.getElementById('decode-offset').value;
+  let dText = document.getElementById('decode-text').value;
+  let decodeResult = decode(dOffset, dText);
+  
+  document.getElementById('decode-result').value = decodeResult;
+}
+
 
 function encode(encodeOffset, encodeText) {
   console.log('=> Entrou na função');
   console.log('=> encodeText ', encodeText);
   console.log('=> encodeOffset ', encodeOffset);
   
-  let letterOffset;
   let textEncode = '';
+  let arrEncode = [];
+  let letterOffset;
   
   for (let i = 0; i < encodeText.length; i++) {    
     // Se uppercase
@@ -33,18 +47,15 @@ function encode(encodeOffset, encodeText) {
     } else if (encodeText.charCodeAt(i) >= 48 && encodeText.charCodeAt(i) <= 57) {
       letterOffset = (((encodeText.charCodeAt(i) - 48) + encodeOffset) % 26) + 48;
       console.log('=> número', letterOffset);
-    } 
-    return textEncode + String.fromCharCode(letterOffset);
-    console.log('=> textencode', textEncode);
+    }
+    console.log('=> arrEncode', arrEncode);
+    return arrEncode.join('');
+    arrEncode.push(String.fromCharCode(letterOffset));
   }
-
 }
 
+
 function decode(decodeOffset, decodeText) {
-  if (decodeOffset < 1 || decodeText.length < 1) {
-    // alert(':/ Dados inseridos inválidos. Tente de novo...');
-  } else {
-    
     let decodeLetterOffset;
     let textDecode = '';
 
@@ -65,7 +76,4 @@ function decode(decodeOffset, decodeText) {
       textDecode = textDecode + String.fromCharCode(decodeLetterOffset);
     }
     return textDecode;
-  }
 }
-
-// encodeText.addEventListener('input', encode, false);
