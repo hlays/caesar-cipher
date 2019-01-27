@@ -9,13 +9,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
   <body>
-    <section id="cipher-or-decipher">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i></a></li>
+          <li><a href="#instructions"><i class="fas fa-question"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
       <h1 class="bar-code-title">Cipher Laboratoria</h1>
       <a href="#encode"><button class="choice"><i class="fas fa-lock"></i>&ensp;CIFRAR</button></a>
       <a href="#decode"><button class="choice"><i class="fas fa-lock-open"></i>&ensp;DESCIFRAR</button></a>
     </section>
-<hr>
-
     <section id="encode">
       <h1>Cifrar</h1>
       <p>
@@ -32,9 +38,6 @@
       <h2>Resultado:</h2>
       <input id="encode-result"></input>
     </section>
-
-<hr>
-
     <section id="decode">
       <h1>Descifrar</h1>
       <p>
@@ -51,7 +54,34 @@
       <h2>Resultado:</h2>
       <input id="decode-result"></input>
     </section>
-
+    <section id="instructions">
+      <h1>Instructions</h1>
+      <div>
+        <h2>Cifrar</h2>
+        <ul>
+          <li>Clique no botão de Cifrar para cifrar sua mensagem</li>
+          <li>Você será direcionado ao campo onde deverá inserir o deslocamento e a mensagem</li>
+          <li>Após inserir os dados corretamente, a mensagem cifrada aparecerá logo abaixo no campo 'Sua mensagem cifrada'</li>
+        </ul>
+        <h2>Importante:</h2>
+        <ul>
+          <li>O DESLOCAMENTO corresponde a uma chave numérica que você escolhe, este número será usado como uma chave de segurança para codificar sua mensagem</li>
+          <li>Guarde o número do DESLOCAMENTO, pois será necessário informá-lo para decodificar sua mensagem</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Descifrar</h2>
+        <ul>
+          <li>Clique no botão de Descifrar para descifrar sua mensagem</li>
+          <li>Você será direcionado ao campo onde deverá inserir o deslocamento e a mensagem</li>
+          <li>Após inserir os dados corretamente, a mensagem descifrada aparecerá logo abaixo no campo 'Sua mensagem cifrada'</li>
+        </ul>
+        <h2>Importante:</h2>
+        <ul>
+          <li>O DESLOCAMENTO corresponde a uma chave numérica que foi escolhida pela pessoa que cifrou a mensagem, e você precisará informá-la corretamente para descifrar a mensagem.</li>
+        </ul>
+      </div>
+    </section>
     <script src="cipher.js"></script>
     <script src="tests.js"></script>
   </body>

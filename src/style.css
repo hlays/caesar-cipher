@@ -1,7 +1,38 @@
 html {
   text-align: center;
   font-family: 'Flamenco', cursive;
+  color: rgb(26, 8, 2);
   font-weight: bold;
+  background: url(img/background.jpg);
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav li {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: rgb(228, 193, 127);
 }
 
 .bar-code-title {
@@ -12,6 +43,7 @@ html {
 h1 {
   font-family: 'Megrim', cursive;
   font-size: 3em;
+  font-weight: bold;
 }
 
 p {
@@ -25,14 +57,37 @@ p {
 
 input, button {
   border-radius: 20px;
-  padding: 10px;
-  margin: 20px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  background-color: #E2BD66;
+  color: rgb(26, 8, 2);
 }
 
-section {
+#home {
+  margin-top: 20%;
   height: 100vw;
 }
 
-#cipher-or-decipher {
-  margin-top: 25%;
+#encode, #decode {
+  margin-top: 20%;
+}
+
+#instructions {
+  margin-top: 20%;
+  background-color: rgba(26, 8, 2, 0.8);
+  color: rgb(228, 193, 127);
+}
+
+#instructions li {
+  font-size: 1.2em;
+  padding: 10px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#instructions h2, h3 {
+  font-size: 2.1em;
+  text-align: center;
 }
