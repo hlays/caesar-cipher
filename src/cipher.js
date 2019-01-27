@@ -1,5 +1,9 @@
 console.log('=> começou ;)');
-
+let encodeOffset = document.getElementById('encode-offset').value;
+// let encodeOffset = document.querySelector('#encode-offset > input');
+let encodeText = document.getElementById('encode-text').value;
+// let encodeText = document.querySelector('#encode-text > input');
+let encodeResult = document.getElementById('encode-result');
 
 function encode(encodeOffset, encodeText) {
   console.log('=> Entrou na função');
@@ -36,14 +40,32 @@ function encode(encodeOffset, encodeText) {
 
 }
 
-function cipher() {
-  let offset = document.getElementById('encode-offset').value;
-  // let offset = document.querySelector('#encode-offset > input');
-  let text = document.getElementById('encode-text').value;
-  // let text = document.querySelector('#encode-text > input');
-  let encodeResult = document.getElementById('encode-result');
+function decode(decodeOffset, decodeText) {
+  if (decodeOffset < 1 || decodeText.length < 1) {
+    // alert(':/ Dados inseridos inválidos. Tente de novo...');
+  } else {
+    
+    let decodeLetterOffset;
+    let textDecode = '';
 
-  const x = encode(offset, text);
+    for (let i = 0; i < decodeText.length; i++) {    
+      // Se uppercase
+      if (decodeText.charCodeAt(i) >= 65 && decodeText.charCodeAt(i)  <= 90) {
+        decodeLetterOffset = (((decodeText.charCodeAt(i) - 65) - decodeOffset) % 26) + 65;
+      // se lowercase
+      } else if (decodeText.charCodeAt(i)  >= 97 && decodeText.charCodeAt(i) <= 122) {
+        decodeLetterOffset = (((decodeText.charCodeAt(i) - 97) - decodeOffset) % 26) + 97;
+      // se espaço
+      } else if (decodeText.charCodeAt(i) === 32) {
+        decodeLetterOffset = 32;
+      // se número
+      } else if (decodeText.charCodeAt(i) >= 48 && decodeText.charCodeAt(i) <= 57) {
+        decodeLetterOffset = (((decodeText.charCodeAt(i) - 48) - decodeOffset) % 10) + 48;
+      } 
+      textDecode = textDecode + String.fromCharCode(decodeLetterOffset);
+    }
+    return textDecode;
+  }
+}
 
-  encodeResult.value = x;
-
+// encodeText.addEventListener('input', encode, false);
