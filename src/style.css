@@ -23,13 +23,7 @@ p {
   font-style: italic;
 }
 
-input {
-  border-radius: 20px;
-  padding: 10px;
-  margin: 20px;
-}
-
-button {
+input, button {
   border-radius: 20px;
   padding: 10px;
   margin: 20px;
