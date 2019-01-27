@@ -1,6 +1,6 @@
 # Cifra de César
 
-[Acesse a aplicação **Cipher**]()
+[Acesse a aplicação: **Cipher Laboratoria**](https://hlays.github.io/caesar-cipher/src/index.html)
 
 ## Prefácio
 :balloon::balloon::balloon:
@@ -46,15 +46,18 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 ### Resumo das respostas obtidas
 1. Visual da aplicação
 ![1. Visual da aplicação](pesquisa/img/1-visual.png)
+
 2. Facilidade de uso / Interface
 ![2. Facilidade de uso / Interface](pesquisa/img/2-facilidade-de-uso.png)
+
 3. Design intuitivo
 ![3. Design intuitivo](pesquisa/img/3-intuitivo.png)
+
 4. Sugestão
 ![4. Sugestão](pesquisa/img/4-sugestao.png)
 
 ### Análise das informações coletadas
-Com base nas informações coletadas até o momento, verifica-se a necessidade de melhorar o design responsivo da aplicação, uma vez que a maioria dos usuários utilizariam através de dispositivo móvel.
+Com base nas informações coletadas até o momento, verifica-se a necessidade de melhorar o design responsivo da aplicação, uma vez que a maioria dos usuários a utilizariam através de dispositivo móvel.
 
 ---
 ## Backlog Desenvolvimento
