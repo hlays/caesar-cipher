@@ -85,3 +85,9 @@ Com base nas informações coletadas até o momento, verifica-se a necessidade d
 
 * [ ] Permite usar um `offset` (_deslocamento_) negativo
 * [ ] Cifra/descifra _outros_ caracteres (espaços, pontuação, `ã`, `á`, ...)
+
+---
+**Para mais informações sobre a Cifra de César**
+
+* *[Projeto Cifra de Cesar Laboratoria](https://github.com/rafaelbcerri/caesar-cipher)*
+* *[Wikipedia](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar)*

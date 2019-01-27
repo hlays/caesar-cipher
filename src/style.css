@@ -4,7 +4,9 @@ html {
   color: rgb(26, 8, 2);
   font-weight: bold;
   background: url(img/background.jpg);
-  background-size: cover;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Navbar
@@ -111,10 +113,6 @@ input, button {
   
   button {
     font-size: 1em;
-  }
-
-  body {
-    background-color: rgba(252, 255, 226, 0.1);
   }
 
   .bar-code-title {

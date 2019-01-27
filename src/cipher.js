@@ -1,5 +1,3 @@
-console.log('=> começou ;)');
-
 function cipher() {
   let eOffset = document.getElementById('encode-offset').value;
   let eText = document.getElementById('encode-text').value;
@@ -19,10 +17,6 @@ function decipher() {
 
 
 function encode(encodeOffset, encodeText) {
-  console.log('=> Entrou na função');
-  console.log('=> encodeText ', encodeText);
-  console.log('=> encodeOffset ', encodeOffset);
-  
   let textEncode = '';
   let letterOffset;
   
