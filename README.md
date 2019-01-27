@@ -1,13 +1,18 @@
 # Cifra de César
 
+[Acesse a aplicação **Cipher**]()
+
 ## Prefácio
 :balloon::balloon::balloon:
+
 O aniversário da sua mãe está se aproximando e você está organizando uma festa
 surpresa. Para manter a festa em segredo foi criado um grupo de Whatsapp com
 amigxs e familiares. O problema é que as vezes sua mãe utiliza o seu celular
 e pode ser que ela veja as suas mensagens. Como a festa é surpresa, você
 decide criar uma aplicação que permita enviar mensagens criptografadas e depois
 descriptografar. Então agora é a hora de aplicar os seus super poderes 😎
+
+---
 
 ## Desenvolvimento da aplicação
 1. **UX**: definição do usuário, planejamento da interface e funcionalidades.
@@ -29,12 +34,34 @@ Dessa forma, o desenvolvimento da interface foi realizado,procurando proporciona
 
 A escolha de ícones e fontes foi realizada pensando em proporcionar a sensação de mistério e segredo ao usuário no contexto da festa surpresa, mantendo a legibilidade e auxiliando visualmente o entendimento do uso intuitivo da aplicação.
 
-### Pesquisa e formulário
+## Pesquisa e formulário
 Foi realizada uma pesquisa através de formulário para verificar a usabilidade da aplicação e validar a experiência de usuário planejada.
+
+*Foram coletadas repostas de 3 usuários.*
 
 * [Formulário](https://goo.gl/forms/ExNJc5uvLzWo8y3E2)
 
-* [Dados Obtidos]()
+* [Dados Obtidos](https://docs.google.com/spreadsheets/d/13LXJI_NV1p7XbUNtWGDBg_HUw3B8PYSlZwnZsiOUXfA/edit?usp=sharing)
+
+### Resumo das respostas obtidas
+1. Visual da aplicação
+![1. Visual da aplicação](pesquisa/img/1-visual.png)
+2. Facilidade de uso / Interface
+![2. Facilidade de uso / Interface](pesquisa/img/2-facilidade-de-uso.png)
+3. Design intuitivo
+![3. Design intuitivo](pesquisa/img/3-intuitivo.png)
+4. Sugestão
+![4. Sugestão](pesquisa/img/4-sugestao.png)
+
+### Análise das informações coletadas
+Com base nas informações coletadas até o momento, verifica-se a necessidade de melhorar o design responsivo da aplicação, uma vez que a maioria dos usuários utilizariam através de dispositivo móvel.
+
+---
+## Backlog Desenvolvimento
+
+![backlog Trello](desenvolvimento.png)
+
+---
 
 ## Checklist
 
@@ -42,16 +69,13 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 
 * [x] `README.md` com explicações e desenho do projeto
 * [x] Usar VanillaJS.
-* [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
-  cifrado.
+* [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser cifrado.
 * [ ] Mostrar o resultado da cifra corretamente.
-* [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
-  descifrado.
+* [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser descifrado.
 * [ ] Mostrar o resultado descifrado corretamente.
-* [x] Permitir escolher o `offset` (_deslocamento_) a ser usado na
-  cifragem/descifragem.
+* [x] Permitir escolher o `offset` (_deslocamento_) a ser usado na cifragem/descifragem.
 * [x] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
+* [x] Implementa `cipher.decode`.
 * [ ] Criar testes unitários.
 
 ### Parte Opcional: "Hacker edition"

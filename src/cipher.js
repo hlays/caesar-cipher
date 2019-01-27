@@ -24,34 +24,25 @@ function encode(encodeOffset, encodeText) {
   console.log('=> encodeOffset ', encodeOffset);
   
   let textEncode = '';
-  let arrEncode = [];
   let letterOffset;
   
   for (let i = 0; i < encodeText.length; i++) {    
     // Se uppercase
     if (encodeText.charCodeAt(i) >= 65 && encodeText.charCodeAt(i)  <= 90) {
       letterOffset = (((encodeText.charCodeAt(i) - 65) + encodeOffset) % 26) + 65;
-      console.log('=> uppercase', letterOffset);
-
     // se lowercase
     } else if (encodeText.charCodeAt(i)  >= 97 && encodeText.charCodeAt(i) <= 122) {
       letterOffset = (((encodeText.charCodeAt(i) - 97) + encodeOffset) % 26) + 97;
-      console.log('=> lowercase', letterOffset);
-
     // se espaço
     } else if (encodeText.charCodeAt(i) === 32) {
       letterOffset = 32;
-      console.log('=> espaço', letterOffset);
-
     // se número
     } else if (encodeText.charCodeAt(i) >= 48 && encodeText.charCodeAt(i) <= 57) {
-      letterOffset = (((encodeText.charCodeAt(i) - 48) + encodeOffset) % 26) + 48;
-      console.log('=> número', letterOffset);
-    }
-    console.log('=> arrEncode', arrEncode);
-    return arrEncode.join('');
-    arrEncode.push(String.fromCharCode(letterOffset));
+      letterOffset = (((encodeText.charCodeAt(i) - 48) + encodeOffset) % 10) + 48;
+    } 
+    textEncode = textEncode + String.fromCharCode(letterOffset);
   }
+  return textEncode;
 }
 
 
@@ -73,6 +64,7 @@ function decode(decodeOffset, decodeText) {
       } else if (decodeText.charCodeAt(i) >= 48 && decodeText.charCodeAt(i) <= 57) {
         decodeLetterOffset = (((decodeText.charCodeAt(i) - 48) - decodeOffset) % 10) + 48;
       } 
+      
       textDecode = textDecode + String.fromCharCode(decodeLetterOffset);
     }
     return textDecode;
