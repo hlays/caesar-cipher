@@ -32,8 +32,8 @@ function encode(encodeOffset, encodeText) {
     // se espaço 
     } else if (eCodeAscii === 32) {
       letterOffset = 32;
-    // se número
-    } else if (eCodeAscii >= 48 && eCodeAscii <= 57) {
+    // se outros
+    } else {
       letterOffset = eCodeAscii;
     } 
     textEncode = textEncode + String.fromCharCode(letterOffset);
@@ -51,18 +51,17 @@ function decode(decodeOffset, decodeText) {
 
     // Se uppercase
     if (deCodeAscii >= 65 && deCodeAscii  <= 90) {
-      decodeLetterOffset = ((deCodeAscii - 90 - decodeOffset) % 26) + 90;
+      decodeLetterOffset = ((deCodeAscii - 65 - decodeOffset) % 26) + 65;
     // se lowercase
     } else if (deCodeAscii  >= 97 && deCodeAscii <= 122) {
-      decodeLetterOffset = ((deCodeAscii - 122 - decodeOffset) % 26) + 122;
+      decodeLetterOffset = ((deCodeAscii - 97 - decodeOffset) % 26) + 97;
     // se espaço
     } else if (deCodeAscii === 32) {
       decodeLetterOffset = 32;
-    // se número
-    } else if (deCodeAscii >= 48 && deCodeAscii <= 57) {
-      decodeLetterOffset = deCodeAscii;
+    // se outros
+    } else {
+      letterOffset = deCodeAscii;
     } 
-    
     textDecode = textDecode + String.fromCharCode(decodeLetterOffset);
   }
   return textDecode;
