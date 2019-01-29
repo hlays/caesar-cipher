@@ -60,7 +60,7 @@ function decode(decodeOffset, decodeText) {
       decodeLetterOffset = 32;
     // se outros
     } else {
-      letterOffset = deCodeAscii;
+      decodeLetterOffset = deCodeAscii;
     } 
     textDecode = textDecode + String.fromCharCode(decodeLetterOffset);
   }

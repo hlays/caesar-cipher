@@ -1,9 +1,9 @@
 function test(funcao, strOriginal, offset, resultadoEsperado) {
   var result = funcao(offset, strOriginal);
   if (result === resultadoEsperado) {
-    console.log("=> Correto! :) input:", strOriginal, "-> Output:", result, " === ", resultadoEsperado, '(Resultado esperado)');
+    console.log("=> Correto! :) input:", strOriginal, "-> Output:", result, "===", resultadoEsperado, '(Resultado esperado)');
   } else {
-    console.log("=> ERRADO! :/ input:", strOriginal, "-> Output:", result, " !==  ", resultadoEsperado, '(Resultado esperado)');
+    console.log("=> ERRADO! :/ input:", strOriginal, "-> Output:", result, "!==", resultadoEsperado, '(Resultado esperado)');
   }
 }
 
