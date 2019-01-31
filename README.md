@@ -14,6 +14,16 @@ descriptografar. Então agora é a hora de aplicar os seus super poderes 😎
 
 ---
 
+## Funcionamento da aplicação
+
+A aplicação cipher, em sua primeira *screen* exibe ao usuário a decisão de **cifrar** ou **decifrar** uma mensagem, ao clicar no botão correspondente, o usuário será direcionado para outra screen, onde deverá informar o deslocamento/chave (um número inteiro, positivo ou negativo) correspondente à cifragem em questão. 
+
+Ao digitar a mensagem, automaticamente o resultado da cifragem/descifragem será exibido no campo *Resultado* logo abaixo do campo de texto.
+
+A aplicação utiliza a chave numérica para deslocar a letra informada até a letra correspondente do alfabeto realizando o processo de cifrar e descifrar através das funções encode e decode respectivamente.
+
+---
+
 ## Desenvolvimento da aplicação
 1. **UX**: definição do usuário, planejamento da interface e funcionalidades.
 2. **Sequência Lógica**: planejamento da sequência lógica necessária para desenvolvimento do código para esta aplicação.
@@ -26,6 +36,15 @@ descriptografar. Então agora é a hora de aplicar os seus super poderes 😎
 
 ### Diagrama de blocos
 ![Diagrama de blocos](src/img/diagrama-de-blocos.png)
+
+## Backlog Desenvolvimento
+
+Sprint 1
+![backlog Trello](backlog-sprint1.png)
+
+Sprint 2
+![backlog Trello](backlog-sprint2.png)
+
 
 ## Definição dos usuários
 Através do prefácio adotado, consideram-se os usuários como familiares e amigos (pessoas próximas), entre adolescentes e adultos, de todos os sexos, que estarão engajados na organização da festa surpresa.
@@ -57,12 +76,7 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 ![4. Sugestão](pesquisa/img/4-sugestao.png)
 
 ### Análise das informações coletadas
-Com base nas informações coletadas até o momento, verifica-se a necessidade de melhorar o design responsivo da aplicação, uma vez que a maioria dos usuários a utilizariam através de dispositivo móvel.
-
----
-## Backlog Desenvolvimento
-
-![backlog Trello](desenvolvimento.png)
+Com base nas informações coletadas até o momento, verifica-se a necessidade de melhorar o design responsivo da aplicação, e a relação entre a imagem background e a cor das fontes utilizadas.
 
 ---
 
@@ -73,18 +87,18 @@ Com base nas informações coletadas até o momento, verifica-se a necessidade d
 * [x] `README.md` com explicações e desenho do projeto
 * [x] Usar VanillaJS.
 * [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser cifrado.
-* [ ] Mostrar o resultado da cifra corretamente.
+* [x] Mostrar o resultado da cifra corretamente.
 * [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser descifrado.
-* [ ] Mostrar o resultado descifrado corretamente.
+* [x] Mostrar o resultado descifrado corretamente.
 * [x] Permitir escolher o `offset` (_deslocamento_) a ser usado na cifragem/descifragem.
 * [x] Implementa `cipher.encode`.
 * [x] Implementa `cipher.decode`.
-* [ ] Criar testes unitários.
+* [x] Criar testes unitários.
 
 ### Parte Opcional: "Hacker edition"
 
-* [ ] Permite usar um `offset` (_deslocamento_) negativo
-* [ ] Cifra/descifra _outros_ caracteres (espaços, pontuação, `ã`, `á`, ...)
+* [x] Permite usar um `offset` (_deslocamento_) negativo
+* [x] Cifra/descifra _outros_ caracteres (espaços, pontuação, `ã`, `á`, ...)
 
 ---
 **Para mais informações sobre a Cifra de César**
