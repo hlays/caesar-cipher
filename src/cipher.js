@@ -25,13 +25,18 @@ function encode(encodeOffset, encodeText) {
 
     // Se uppercase
     if (eCodeAscii >= 65 && eCodeAscii  <= 90) {
-      letterOffset = ((eCodeAscii - 65 + encodeOffset) % 26) + 65;
+      if (encodeOffset < 0) {
+        letterOffset = (((eCodeAscii - 65) + encodeOffset % 26) + 26) % 26 + 65;
+      } else {
+        letterOffset = ((eCodeAscii - 65 + encodeOffset) % 26) + 65;
+      }
     // se lowercase
     } else if (eCodeAscii  >= 97 && eCodeAscii <= 122) {
-      letterOffset = ((eCodeAscii - 97 + encodeOffset) % 26) + 97;
-    // se espaço 
-    } else if (eCodeAscii === 32) {
-      letterOffset = 32;
+      if (encodeOffset < 0) {
+        letterOffset = (((eCodeAscii - 97) + encodeOffset % 26) + 26) % 26 + 97;
+      } else {
+        letterOffset = ((eCodeAscii - 97 + encodeOffset) % 26) + 97;
+      }
     // se outros
     } else {
       letterOffset = eCodeAscii;
@@ -51,13 +56,18 @@ function decode(decodeOffset, decodeText) {
 
     // Se uppercase
     if (deCodeAscii >= 65 && deCodeAscii  <= 90) {
-      decodeLetterOffset = (((deCodeAscii - 65) - decodeOffset % 26) + 26) % 26 + 65;
+      if (decodeOffset < 0) {
+        decodeLetterOffset = ((deCodeAscii - 65 - decodeOffset) % 26) + 65;
+      } else {
+        decodeLetterOffset = (((deCodeAscii - 65) - (decodeOffset % 26)) + 26) % 26 + 65;
+      }
     // se lowercase
     } else if (deCodeAscii  >= 97 && deCodeAscii <= 122) {
-      decodeLetterOffset = (((deCodeAscii - 97) - decodeOffset % 26) + 26) % 26 + 97;
-    // se espaço
-    } else if (deCodeAscii === 32) {
-      decodeLetterOffset = 32;
+      if (decodeOffset < 0) {
+        decodeLetterOffset = ((deCodeAscii - 97 - decodeOffset) % 26) + 97;
+      } else {
+        decodeLetterOffset = (((deCodeAscii - 97) - (decodeOffset % 26)) + 26) % 26 + 97;
+      }
     // se outros
     } else {
       decodeLetterOffset = deCodeAscii;

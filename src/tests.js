@@ -24,6 +24,7 @@ test(encode, 'alo', 2, 'cnq');
 test(encode, 'alo', 26, 'alo');
 test(encode, 'Hello World!', 2, 'Jgnnq Yqtnf!');
 test(encode, 'abcABC fghFGH 123', 5, 'fghFGH klmKLM 123');
+test(encode, 'abcde', -5, 'vwxyz');
 
 
 
@@ -41,6 +42,7 @@ test(decode, 'cnq', 2, 'alo');
 test(decode, 'alo', 26, 'alo'); 
 test(decode, 'Jgnnq Yqtnf!', 2, 'Hello World!'); 
 test(decode, 'fghFGH klmKLM 123', 5, 'abcABC fghFGH 123'); 
+test(encode, 'vwxyz', -5, 'abcde');
 
 
 
