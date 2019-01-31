@@ -24,7 +24,7 @@ A aplicação utiliza a chave numérica para deslocar a letra informada até a l
 
 ---
 
-## Desenvolvimento da aplicação
+## Desenvolvimento
 1. **UX**: definição do usuário, planejamento da interface e funcionalidades.
 2. **Sequência Lógica**: planejamento da sequência lógica necessária para desenvolvimento do código para esta aplicação.
 3. **Diagrama de blocos**: desevolvimento do fluxograma.
@@ -35,15 +35,15 @@ A aplicação utiliza a chave numérica para deslocar a letra informada até a l
 8. **Testes**: desenvolvimento de testes para validar o funcionamento esperado da aplicação.
 
 ### Diagrama de blocos
-![Diagrama de blocos](src/img/diagrama-de-blocos.png)
+![Diagrama de blocos](img/diagrama-de-blocos.png)
 
 ## Backlog Desenvolvimento
 
 Sprint 1
-![backlog Trello](backlog-sprint1.png)
+![backlog Trello](img/backlog-sprint1.png)
 
 Sprint 2
-![backlog Trello](backlog-sprint2.png)
+![backlog Trello](img/backlog-sprint2.png)
 
 
 ## Definição dos usuários
