@@ -11,8 +11,7 @@ function test(funcao, strOriginal, offset, resultadoEsperado) {
 
 console.log('--- Cifrar >>>');
 
-test(encode, 'ola mundo', -1, 'nkz ltmcn');
-test(encode, 'uvwxyz', -5, 'pqrstu');
+
 test(encode, 'uvxwyz', 5, 'zacbde');
 test(encode, 'alo', 2, 'cnq');
 test(encode, 'alo', 26, 'alo');
@@ -25,10 +24,11 @@ test(encode, ' ', 2, ' ');
 test(encode, ' ', 20, ' ');
 test(encode, ' ', 2000000, ' ');
 
+
+
 console.log('--- Descifrar <<<');
 
-test(decode, 'zacbde', -5, 'uvxwyz'); // HeRRU =UXRd!
-test(encode, 'pqrstu', -5, 'uvwxyz');
+test(decode, 'zacbde', 5, 'uvxwyz');
 test(decode, 'cnq', 2, 'alo');
 test(decode, 'alo', 26, 'alo'); 
 test(decode, 'Jgnnq Yqtnf!', 2, 'Hello World!'); 
