@@ -56,18 +56,10 @@ function decode(decodeOffset, decodeText) {
 
     // Se uppercase
     if (deCodeAscii >= 65 && deCodeAscii  <= 90) {
-      if (decodeOffset < 0) {
-        decodeLetterOffset = ((deCodeAscii - 65 - decodeOffset) % 26) + 65;
-      } else {
-        decodeLetterOffset = (((deCodeAscii - 65) - (decodeOffset % 26)) + 26) % 26 + 65;
-      }
+      decodeLetterOffset = (((deCodeAscii - 65) - (decodeOffset % 26)) + 26) % 26 + 65;
     // se lowercase
     } else if (deCodeAscii  >= 97 && deCodeAscii <= 122) {
-      if (decodeOffset < 0) {
-        decodeLetterOffset = ((deCodeAscii - 97 - decodeOffset) % 26) + 97;
-      } else {
-        decodeLetterOffset = (((deCodeAscii - 97) - (decodeOffset % 26)) + 26) % 26 + 97;
-      }
+      decodeLetterOffset = (((deCodeAscii - 97) - (decodeOffset % 26)) + 26) % 26 + 97;
     // se outros
     } else {
       decodeLetterOffset = deCodeAscii;
