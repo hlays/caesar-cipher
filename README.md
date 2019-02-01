@@ -16,7 +16,7 @@ descriptografar. Então agora é a hora de aplicar os seus super poderes 😎
 
 ## Funcionamento da aplicação
 
-A aplicação cipher, em sua primeira *screen* exibe ao usuário a decisão de **cifrar** ou **decifrar** uma mensagem, ao clicar no botão correspondente, o usuário será direcionado para outra screen, onde deverá informar o deslocamento/chave (um número inteiro, positivo ou negativo) correspondente à cifragem em questão. 
+A aplicação cipher, em sua primeira *screen* exibe ao usuário a decisão de **cifrar** ou **decifrar** uma mensagem, ao clicar no botão correspondente, o usuário será direcionado para outra *screen*, onde deverá informar o deslocamento/chave (um número inteiro, positivo ou negativo) correspondente à cifragem em questão. 
 
 Ao digitar a mensagem, automaticamente o resultado da cifragem/descifragem será exibido no campo *Resultado* logo abaixo do campo de texto.
 
