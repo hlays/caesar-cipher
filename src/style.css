@@ -112,12 +112,17 @@ input, button {
   }
 
   #home, #encode, #decode {
-    margin-top: 50%;
+    margin-top: 30%;
+    height: 100vh;
+  }
+
+  #encode, #decode {
+    margin-top: 100%;
     height: 100vh;
   }
 
   #instructions {
-    margin-top: 50%;
+    margin-top: 100%;
   }
 
   #instructions li {
