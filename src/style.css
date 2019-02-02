@@ -3,8 +3,8 @@ html {
   font-family: 'Flamenco', cursive;
   color: rgb(26, 8, 2);
   font-weight: bold;
-  background: url(img/background.jpg);
-  background-size: 100%;
+  background: url(img/pawel-czerwinski-1144671-unsplash.jpg);
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
@@ -71,7 +71,7 @@ input, button {
   padding: 15px;
   margin: 10px;
   text-align: center;
-  background-color: #E2BD66;
+  background-color: rgb(196, 194, 190);
   color: rgb(26, 8, 2);
 }
 
@@ -81,27 +81,30 @@ input, button {
 
 #instructions {
   margin-top: 20%;
-  background-color: v
-  color: rgb(228, 193, 127);
+  padding-top: 3%;
 }
 
 
 #instructions ul {
   list-style: none;
+  text-align: right;
+  margin: 20px;
 }
 
 
 #instructions li {
   font-size: 1.2em;
-  padding: 10px;
+  padding: 20px;
   width: 50%;
-  margin-right: auto;
   margin-left: auto;
 }
 
 #instructions h2, h3 {
   font-size: 2.1em;
-  text-align: center;
+  text-align: right;
+  margin-right: 30px;
+  margin-left: auto;
+
 }
 
 @media (max-width: 570px) {
