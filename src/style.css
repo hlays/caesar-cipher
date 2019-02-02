@@ -38,6 +38,10 @@ a {
   font-size: 1.5em;
   color: rgb(228, 193, 127);
 }
+
+a:hover {
+  color: rgba(223, 150, 15, 0.856);
+}
 /*----------------------------*/
 
 .bar-code-title {
@@ -94,12 +98,20 @@ input, button {
 }
 
 @media (max-width: 570px) {
+  a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgba(240, 172, 47, 0.897);
+  }
+
   p {
     font-size: 1.2em;
   }
 
   input {
     font-size: 1.2em;
+    padding: 5px;
+    margin: 5px;
   }
   
   button {
