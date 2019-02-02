@@ -80,6 +80,24 @@ Com base nas informações coletadas até o momento, verifica-se a necessidade d
 
 ---
 
+## Aprendizado 
+Novos itens aprendidos ou aperfeiçoados durante a realização deste projeto:
+
+- HTML:
+  - Viewport: `<meta name="viewport" content="width=device-width, user-scalable=yes">` para controlar o tamanho e a escala da viewport, neste caso, impedindo o navegador de renderizar a página, controlando o tamanho da viewport correspondendo à própria largura onde o conteúdo está sendo exibido (`device-width`).
+- CSS:
+  - Dimensões: `em` (relacionado ao elemento pai), `vh` (altura da viewport), `vw` (largura da viewport),
+  - `background-attachment: fixed` para manter o background fixo durante a rolagem da página
+- Javascipt:
+  - 'Chamar' função através de `addEventListener` (input),
+  - Utilizar método `charCodeAt()` para retornar o valor Unicode a partir de uma string,
+  - Utilizar método `String.fromCharCode()` para retornar uma string através de valores Unicode.
+  - Criar e executar Testes
+
+
+---
+
+
 ## Checklist
 
 ### Parte Obrigatória

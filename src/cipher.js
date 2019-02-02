@@ -68,3 +68,6 @@ function decode(decodeOffset, decodeText) {
   }
   return textDecode;
 }
+
+document.getElementById("encode-text").addEventListener("input", cipher);
+document.getElementById("decode-text").addEventListener("input", decipher);
