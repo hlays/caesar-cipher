@@ -37,11 +37,11 @@ nav li {
 nav a {
   text-decoration: none;
   font-size: 1.5em;
-  color: rgb(228, 193, 127);
+  color: rgb(196, 194, 190);
 }
 
 nav a:hover {
-  color: rgba(223, 150, 15, 0.856);
+  color: rgb(145, 145, 145);
 }
 /*----------------------------*/
 
@@ -111,7 +111,6 @@ input, button {
   nav a {
     text-decoration: none;
     font-size: 1.5em;
-    color: rgb(228, 193, 127);
   }
 
   p {
