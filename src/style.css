@@ -19,27 +19,28 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  margin: 0;
 }
 
-ul {
+nav ul {
   list-style: none;
-  top: 0;
-  left: 0;
-  right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(26, 8, 2, 0.8);
 }
 
 nav li {
   padding: 10px;
 }
 
-a {
+nav a {
   text-decoration: none;
   font-size: 1.5em;
   color: rgb(228, 193, 127);
 }
 
-a:hover {
+nav a:hover {
   color: rgba(223, 150, 15, 0.856);
 }
 /*----------------------------*/
@@ -50,7 +51,7 @@ a:hover {
 }
 
 #home {
-  margin-top: 20%;
+  padding-top: 10%;
   height: 100vw;
 }
 
@@ -80,9 +81,15 @@ input, button {
 
 #instructions {
   margin-top: 20%;
-  background-color: rgba(26, 8, 2, 0.8);
+  background-color: v
   color: rgb(228, 193, 127);
 }
+
+
+#instructions ul {
+  list-style: none;
+}
+
 
 #instructions li {
   font-size: 1.2em;
@@ -98,10 +105,10 @@ input, button {
 }
 
 @media (max-width: 570px) {
-  a {
+  nav a {
     text-decoration: none;
     font-size: 1.5em;
-    color: rgba(240, 172, 47, 0.897);
+    color: rgb(228, 193, 127);
   }
 
   p {
@@ -127,16 +134,19 @@ input, button {
     margin-top: 30%;
     height: 100vh;
     width: 100vw;
+    padding-top: 20%;
   }
 
   #encode, #decode {
     margin-top: 100%;
+    padding-top: 10%;
     height: 100vh;
     width: 100vw;
   }
 
   #instructions {
     margin-top: 100%;
+    padding-top: 10%;
     width: 100vw;
   }
 
