@@ -84,13 +84,25 @@ input, button {
   padding-top: 3%;
 }
 
+#instructions h2, h3 {
+  font-size: 2.1em;
+  text-align: right;
+  margin-right: 30px;
+  margin-left: auto;
+
+}
+
+#instructions h1 {
+  text-align: right;
+  margin-right: 30px;
+  margin-left: auto;
+}
 
 #instructions ul {
   list-style: none;
   text-align: right;
   margin: 20px;
 }
-
 
 #instructions li {
   font-size: 1.2em;
@@ -99,13 +111,6 @@ input, button {
   margin-left: auto;
 }
 
-#instructions h2, h3 {
-  font-size: 2.1em;
-  text-align: right;
-  margin-right: 30px;
-  margin-left: auto;
-
-}
 
 @media (max-width: 570px) {
   nav a {
