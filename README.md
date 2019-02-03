@@ -60,9 +60,7 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 *Foram coletadas repostas de 3 usuários.*
 
 ### Sprint 1
-* [Formulário](https://goo.gl/forms/ExNJc5uvLzWo8y3E2)
-
-* [Dados Obtidos](https://docs.google.com/spreadsheets/d/13LXJI_NV1p7XbUNtWGDBg_HUw3B8PYSlZwnZsiOUXfA/edit?usp=sharing)
+* [Dados Obtidos]()
 
 ### Resumo das respostas obtidas
 1. Visual da aplicação
@@ -82,25 +80,25 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 Com base nas informações coletadas no primeiro sprint, verifica-se a necessidade de melhorar o design responsivo da aplicação, e a relação entre a imagem background e a cor das fontes utilizadas.
 
 ### Sprint 2
-* [Formulário](https://goo.gl/forms/vAmltS7SdVsuonjO2)
+* [Dados obtidos]()
 
-* [Dados Obtidos](xxx)
 
 ### Resumo das respostas obtidas
 1. Visual da aplicação
-![1. Visual da aplicação](pesquisa/img/1-visual2.png)
+
+![1. Visual da aplicação](pesquisa/img/visual2.jpg)
 
 2. Facilidade de uso / Interface
-![2. Facilidade de uso / Interface](pesquisa/img/2-facilidade-de-uso2.png)
+
+![2. Facilidade de uso / Interface](pesquisa/img/uso2.jpg)
 
 3. Design intuitivo
-![3. Design intuitivo](pesquisa/img/3-intuitivo2.png)
 
-4. Sugestão
-![4. Sugestão](pesquisa/img/4-sugestao2.png)
+![3. Design intuitivo](pesquisa/img/intuitivo2.jpg)
+
 
 ### Análise das informações coletadas
-xxx
+Com base na pesquisa realizada no sprint 1, foi possível analisar as dificuldades e demandas do usuário com relação à aplicação e fazer algumas melhorias, quanto à imagem de fundo da aplicação, tamanho e cor das fontes e melhoramento do menu.
 
 ---
 
