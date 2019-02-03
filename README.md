@@ -60,7 +60,7 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 *Foram coletadas repostas de 3 usuários.*
 
 ### Sprint 1
-* [Dados Obtidos](pesquisa/Cipher - festa Surpresa (respostas) - Respostas ao formulário 1.pdf)
+* [Dados Obtidos](https://github.com/hlays/caesar-cipher/blob/master/pesquisa/Cipher%20-%20festa%20Surpresa%20(respostas)%20-%20Respostas%20ao%20formul%C3%A1rio%201.pdf)
 
 ### Resumo das respostas obtidas
 1. Visual da aplicação
@@ -80,7 +80,7 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 Com base nas informações coletadas no primeiro sprint, verifica-se a necessidade de melhorar o design responsivo da aplicação, e a relação entre a imagem background e a cor das fontes utilizadas.
 
 ### Sprint 2
-* [Dados obtidos]()
+* [Dados obtidos](https://github.com/hlays/caesar-cipher/blob/master/pesquisa/sp2%20-%20Cipher%20-%20festa%20Surpresa%20(respostas)%20-%20Respostas%20ao%20formul%C3%A1rio%202.pdf)
 
 
 ### Resumo das respostas obtidas
