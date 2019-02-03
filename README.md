@@ -1,6 +1,7 @@
 # Cifra de César
 
 [Acesse a aplicação: **Cipher Laboratoria**](https://hlays.github.io/caesar-cipher/src/index.html)
+![Screen Aplicação](img/screen.jpg)
 
 ## Prefácio
 :balloon::balloon::balloon:
@@ -58,6 +59,7 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 
 *Foram coletadas repostas de 3 usuários.*
 
+### Sprint 1
 * [Formulário](https://goo.gl/forms/ExNJc5uvLzWo8y3E2)
 
 * [Dados Obtidos](https://docs.google.com/spreadsheets/d/13LXJI_NV1p7XbUNtWGDBg_HUw3B8PYSlZwnZsiOUXfA/edit?usp=sharing)
@@ -73,29 +75,36 @@ Foi realizada uma pesquisa através de formulário para verificar a usabilidade 
 ![3. Design intuitivo](pesquisa/img/3-intuitivo.png)
 
 4. Sugestão
+
 ![4. Sugestão](pesquisa/img/4-sugestao.png)
 
 ### Análise das informações coletadas
-Com base nas informações coletadas até o momento, verifica-se a necessidade de melhorar o design responsivo da aplicação, e a relação entre a imagem background e a cor das fontes utilizadas.
+Com base nas informações coletadas no primeiro sprint, verifica-se a necessidade de melhorar o design responsivo da aplicação, e a relação entre a imagem background e a cor das fontes utilizadas.
+
+### Sprint 2
+* [Formulário](https://goo.gl/forms/vAmltS7SdVsuonjO2)
+
+* [Dados Obtidos](xxx)
+
+### Resumo das respostas obtidas
+1. Visual da aplicação
+![1. Visual da aplicação](pesquisa/img/1-visual2.png)
+
+2. Facilidade de uso / Interface
+![2. Facilidade de uso / Interface](pesquisa/img/2-facilidade-de-uso2.png)
+
+3. Design intuitivo
+![3. Design intuitivo](pesquisa/img/3-intuitivo2.png)
+
+4. Sugestão
+![4. Sugestão](pesquisa/img/4-sugestao2.png)
+
+### Análise das informações coletadas
+xxx
 
 ---
 
-## Aprendizado 
-Novos itens aprendidos ou aperfeiçoados durante a realização deste projeto:
 
-- HTML:
-  - Viewport: `<meta name="viewport" content="width=device-width, user-scalable=yes">` para controlar o tamanho e a escala da viewport, neste caso, impedindo o navegador de renderizar a página, controlando o tamanho da viewport correspondendo à própria largura onde o conteúdo está sendo exibido (`device-width`).
-- CSS:
-  - Dimensões: `em` (relacionado ao elemento pai), `vh` (altura da viewport), `vw` (largura da viewport),
-  - `background-attachment: fixed` para manter o background fixo durante a rolagem da página,
-  - flexbox.
-- Javascipt:
-  - 'Chamar' função através de `addEventListener` (input),
-  - Utilizar método `charCodeAt()` para retornar o valor Unicode a partir de uma string,
-  - Utilizar método `String.fromCharCode()` para retornar uma string através de valores Unicode,
-  - Criar e executar Testes.
-
----
 
 
 ## Checklist
