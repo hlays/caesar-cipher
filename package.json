@@ -1,0 +1,19 @@
+{
+  "name": "caesar-cipher",
+  "version": "1.0.0",
+  "description": "cifrar e descifrar frases com cifra de Cezar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hlays/caesar-cipher.git"
+  },
+  "author": "Lays Marie Hidani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hlays/caesar-cipher/issues"
+  },
+  "homepage": "https://github.com/hlays/caesar-cipher#readme"
+}
