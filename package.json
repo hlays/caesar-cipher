@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hlays/caesar-cipher/issues"
   },
-  "homepage": "https://github.com/hlays/caesar-cipher#readme"
+  "homepage": "https://github.com/hlays/caesar-cipher#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
 }
