@@ -9,8 +9,6 @@ html {
   background-attachment: fixed;
 }
 
-/* Navbar
----------------------*/
 header {
   position: fixed;
   top: 0;
@@ -43,14 +41,13 @@ nav a {
 nav a:hover {
   color: rgb(145, 145, 145);
 }
-/*----------------------------*/
 
 .bar-code-title {
   font-family: 'Libre Barcode 128 Text', cursive;
   font-size: 5em;
 }
 
-#home {
+.home {
   padding-top: 10%;
   height: 100vw;
 }
@@ -75,89 +72,79 @@ input, button {
   color: rgb(26, 8, 2);
 }
 
-#encode, #decode {
+.encode, .decode {
   margin-top: 20%;
 }
 
-#instructions {
+.instructions {
   margin-top: 20%;
   padding-top: 3%;
 }
 
-#instructions h1 {
+.instructions h1 {
   text-align: right;
   margin-right: 30px;
   margin-left: auto;
 }
 
-#instructions h2, h3 {
+.instructions h2, h3 {
   font-size: 2.1em;
   text-align: right;
   margin-right: 30px;
   margin-left: auto;
 }
 
-
-#instructions ul {
+.instructions ul {
   list-style: none;
   text-align: right;
   margin: 20px;
 }
 
-#instructions li {
+.instructions li {
   font-size: 1.2em;
   padding: 20px;
   width: 50%;
   margin-left: auto;
 }
 
-
 @media (max-width: 570px) {
   nav a {
     text-decoration: none;
     font-size: 1.5em;
   }
-
   p {
     font-size: 1.2em;
   }
-
   input {
     font-size: 1.2em;
     padding: 5px;
     margin: 5px;
   }
-  
   button {
     font-size: 1em;
   }
-
   .bar-code-title {
     font-size: 4em;
     line-height: 1.2em;
   }
-
-  #home {
+  .home {
     margin-top: 30%;
     height: 100vh;
     width: 100vw;
     padding-top: 20%;
   }
-
-  #encode, #decode {
+  .encode, .decode {
     margin-top: 100%;
     padding-top: 10%;
     height: 100vh;
     width: 100vw;
   }
-
-  #instructions {
+  .instructions {
     margin-top: 100%;
     padding-top: 10%;
     width: 100vw;
   }
-
-  #instructions li {
+  .instructions li {
     padding: 5px;
   }
 }
