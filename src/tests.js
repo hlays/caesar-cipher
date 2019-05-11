@@ -7,8 +7,6 @@ function test(funcao, strOriginal, offset, resultadoEsperado) {
   }
 }
 
-
-
 console.log('--- Cifrar >>>');
 // encode: espaço e outros caracteres especiais (esperado retornar o mesmo caracter)
 test(encode, ' ', 2, ' ');
@@ -48,9 +46,9 @@ test(decode, '123', 5500000, '123');
 // decode: letras
 test(decode, 'zacbde', 5, 'uvxwyz');
 test(decode, 'cnq', 2, 'alo');
-test(decode, 'alo', 26, 'alo'); 
-test(decode, 'Jgnnq Yqtnf!', 2, 'Hello World!'); 
-test(decode, 'fghFGH klmKLM 123', 5, 'abcABC fghFGH 123'); 
+test(decode, 'alo', 26, 'alo');
+test(decode, 'Jgnnq Yqtnf!', 2, 'Hello World!');
+test(decode, 'fghFGH klmKLM 123', 5, 'abcABC fghFGH 123');
 // decode: offset negativo
 test(decode, 'vwxyz', -5, 'abcde');
 test(decode, 'abcde', -26, 'abcde');

@@ -5,17 +5,17 @@ const aInAsciiLowerCase = 97;
 const zInAsciiLowerCase = 122;
 
 function cipher() {
-  let encondedOffset = parseInt(document.getElementById('encode-offset').value);
-  let encodedText = document.getElementById('encode-text').value;
-  let encodeResult = encode(encondedOffset, encodedText);
+  const encondedOffset = parseInt(document.getElementById('encode-offset').value);
+  const encodedText = document.getElementById('encode-text').value;
+  const encodeResult = encode(encondedOffset, encodedText);
 
   document.getElementById('encode-result').value = encodeResult;
 }
 
 function decipher() {
-  let decodeOffset = parseInt(document.getElementById('decode-offset').value);
-  let dText = document.getElementById('decode-text').value;
-  let decodeResult = decode(decodeOffset, dText);
+  const decodeOffset = parseInt(document.getElementById('decode-offset').value);
+  const dText = document.getElementById('decode-text').value;
+  const decodeResult = decode(decodeOffset, dText);
 
   document.getElementById('decode-result').value = decodeResult;
 }
