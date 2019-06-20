@@ -1,9 +1,9 @@
-const test = (cipher, strOriginal, offset, resultadoEsperado) => {
+const test = (cipher, strOriginal, offset, wantedResult) => {
   let result = cipher(offset, strOriginal);
-  if (result === resultadoEsperado) {
-    console.log('=> Correto! :) output:', result, '===', resultadoEsperado);
+  if (result === wantedResult) {
+    console.log('=> Correto! :) output:', result, '===', wantedResult);
   } else {
-    console.error('<= Errado! :/ output:', result, '!==', resultadoEsperado);
+    console.error('<= Errado! :/ output:', result, '!==', wantedResult);
   }
 }
 

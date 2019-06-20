@@ -72,8 +72,3 @@ const decode = (decodeOffset, decodeText) => {
 
 document.getElementById('encode-text').addEventListener('input', cipher);
 document.getElementById('decode-text').addEventListener('input', decipher);
-
-const _encode = encode;
-export { _encode as encode };
-const _decode = decode;
-export { _decode as decode };
