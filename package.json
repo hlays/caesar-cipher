@@ -18,5 +18,8 @@
   "homepage": "https://github.com/hlays/caesar-cipher#readme",
   "devDependencies": {
     "eslint": "^5.16.0"
-  }
+  },
+  "keywords": [
+    "cipher"
+  ]
 }
