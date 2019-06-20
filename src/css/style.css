@@ -1,12 +1,12 @@
 html {
-  text-align: center;
-  font-family: 'Flamenco', cursive;
-  color: rgb(26, 8, 2);
+  font-family: "Flamenco", cursive;
   font-weight: bold;
-  background: url(img/pawel-czerwinski-1144671-unsplash.jpg);
+  text-align: center;
+  background: url(../img/pawel-czerwinski-1144671-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  color: #1a0802;
 }
 
 header {
@@ -14,12 +14,7 @@ header {
   top: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-}
-
-nav ul {
+.navbar ul {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
@@ -27,23 +22,48 @@ nav ul {
   justify-content: center;
   background-color: rgba(26, 8, 2, 0.8);
 }
-
-nav li {
+.navbar li {
   padding: 10px;
 }
-
-nav a {
+.navbar a {
   text-decoration: none;
   font-size: 1.5em;
-  color: rgb(196, 194, 190);
+  color: #c4c2be;
+}
+.navbar a:hover {
+  color: #919191;
 }
 
-nav a:hover {
-  color: rgb(145, 145, 145);
+.instructions {
+  margin-top: 20%;
+  padding-top: 3%;
+}
+.instructions h1 {
+  text-align: right;
+  margin-right: 30px;
+  margin-left: auto;
+}
+.instructions h2,
+.instructions h3 {
+  font-size: 2.1em;
+  text-align: right;
+  margin-right: 30px;
+  margin-left: auto;
+}
+.instructions ul {
+  list-style: none;
+  text-align: right;
+  margin: 20px;
+}
+.instructions li {
+  font-size: 1.2em;
+  padding: 20px;
+  width: 50%;
+  margin-left: auto;
 }
 
 .bar-code-title {
-  font-family: 'Libre Barcode 128 Text', cursive;
+  font-family: "Libre Barcode 128 Text", cursive;
   font-size: 5em;
 }
 
@@ -53,7 +73,7 @@ nav a:hover {
 }
 
 h1 {
-  font-family: 'Megrim', cursive;
+  font-family: "Megrim", cursive;
   font-size: 3em;
   font-weight: bold;
 }
@@ -62,83 +82,62 @@ p {
   font-size: 2em;
 }
 
-input, button {
+input,
+button {
   font-size: 16px;
   border-radius: 20px;
   padding: 15px;
   margin: 10px;
   text-align: center;
-  background-color: rgb(196, 194, 190);
-  color: rgb(26, 8, 2);
+  color: #1a0802;
+  background-color: #c4c2be;
 }
 
-.encode, .decode {
+.encode,
+.decode {
   margin-top: 20%;
-}
-
-.instructions {
-  margin-top: 20%;
-  padding-top: 3%;
-}
-
-.instructions h1 {
-  text-align: right;
-  margin-right: 30px;
-  margin-left: auto;
-}
-
-.instructions h2, h3 {
-  font-size: 2.1em;
-  text-align: right;
-  margin-right: 30px;
-  margin-left: auto;
-}
-
-.instructions ul {
-  list-style: none;
-  text-align: right;
-  margin: 20px;
-}
-
-.instructions li {
-  font-size: 1.2em;
-  padding: 20px;
-  width: 50%;
-  margin-left: auto;
 }
 
 @media (max-width: 570px) {
-  nav a {
+  .navbar a {
     text-decoration: none;
     font-size: 1.5em;
   }
+
   p {
     font-size: 1.2em;
   }
+
   input {
     font-size: 1.2em;
     padding: 5px;
     margin: 5px;
   }
+
   button {
     font-size: 1em;
   }
+
   .bar-code-title {
     font-size: 4em;
     line-height: 1.2em;
   }
+
   .home {
     margin-top: 30%;
     height: 100vh;
     width: 100vw;
     padding-top: 20%;
   }
-  .encode, .decode {
+
+  .encode,
+.decode {
     margin-top: 100%;
     padding-top: 10%;
     height: 100vh;
     width: 100vw;
   }
+
   .instructions {
     margin-top: 100%;
     padding-top: 10%;
@@ -148,3 +147,5 @@ input, button {
     padding: 5px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

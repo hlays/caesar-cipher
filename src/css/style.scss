@@ -1,0 +1,167 @@
+$brown: rgb(26, 8, 2);
+$brown-transp: rgba(26, 8, 2, 0.8);
+$light-gray: rgb(196, 194, 190);
+$dark-gray: rgb(145, 145, 145);
+$font-title: "Megrim", cursive;
+$font-general: "Flamenco", cursive;
+$font-logo: "Libre Barcode 128 Text", cursive;
+
+html {
+  font-family: $font-general;
+  font-weight: bold;
+  text-align: center;
+  background: url(../img/pawel-czerwinski-1144671-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: $brown;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: $brown-transp;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: $light-gray;
+
+    &:hover {
+      color: $dark-gray;
+    }
+  }
+}
+
+.instructions {
+  margin-top: 20%;
+  padding-top: 3%;
+
+  h1 {
+    text-align: right;
+    margin-right: 30px;
+    margin-left: auto;
+  }
+
+  h2,
+  h3 {
+    font-size: 2.1em;
+    text-align: right;
+    margin-right: 30px;
+    margin-left: auto;
+  }
+
+  ul {
+    list-style: none;
+    text-align: right;
+    margin: 20px;
+  }
+
+  li {
+    font-size: 1.2em;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+  }
+}
+
+.bar-code-title {
+  font-family: $font-logo;
+  font-size: 5em;
+}
+
+.home {
+  padding-top: 10%;
+  height: 100vw;
+}
+
+h1 {
+  font-family: $font-title;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 2em;
+}
+
+input,
+button {
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  color: $brown;
+  background-color: $light-gray;
+}
+
+.encode,
+.decode {
+  margin-top: 20%;
+}
+
+@media (max-width: 570px) {
+  .navbar a {
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  input {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  .bar-code-title {
+    font-size: 4em;
+    line-height: 1.2em;
+  }
+
+  .home {
+    margin-top: 30%;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 20%;
+  }
+
+  .encode,
+  .decode {
+    margin-top: 100%;
+    padding-top: 10%;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .instructions {
+    margin-top: 100%;
+    padding-top: 10%;
+    width: 100vw;
+
+    li {
+      padding: 5px;
+    }
+  }
+}
