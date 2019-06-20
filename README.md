@@ -2,7 +2,7 @@
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1E.svg)
 ![SASS](https://img.shields.io/badge/-sass-%23D75893.svg)
 
-[Acesse a aplicação: **Cipher Laboratoria**](https://layshidani.github.io/caesar-cipher/)
+[Acesse a aplicação: **Cipher Laboratoria**](https://layshidani.github.io/caesar-cipher/index.html)
 ![Screen Aplicação](img/screen.jpg)
 
 ## Prefácio
