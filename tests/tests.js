@@ -1,7 +1,5 @@
-const { encode, decode } = require('../src/cipher');
-
-function test(funcao, strOriginal, offset, resultadoEsperado) {
-  let result = funcao(offset, strOriginal);
+const test = (cipher, strOriginal, offset, resultadoEsperado) => {
+  let result = cipher(offset, strOriginal);
   if (result === resultadoEsperado) {
     console.log('=> Correto! :) output:', result, '===', resultadoEsperado);
   } else {
@@ -30,8 +28,6 @@ test(encode, 'abcABC fghFGH 123', 5, 'fghFGH klmKLM 123');
 // encode: offset negativo
 test(encode, 'abcde', -5, 'vwxyz');
 test(encode, 'abcde', -26, 'abcde');
-
-
 
 console.log('--- Descifrar <<<');
 // decode: espaço e outros caracteres especiais (esperado retornar o mesmo caracter)
