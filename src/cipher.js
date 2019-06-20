@@ -23,17 +23,19 @@ function decipher() {
 function encode(encodeOffset, encodeText) {
   let textEncode = '';
   let letterOffset;
-
+  
   for (let i = 0; i < encodeText.length; i++) {
     let encodedCodeAscii = encodeText.charCodeAt(i);
+    const isLowerCase = encodedCodeAscii >= aInAsciiUpperCase && encodedCodeAscii <= zInAsciiUpperCase;
+    const isUpperCase = encodedCodeAscii >= aInAsciiLowerCase && encodedCodeAscii <= zInAsciiLowerCase;
 
-    if (encodedCodeAscii >= aInAsciiUpperCase && encodedCodeAscii <= zInAsciiUpperCase) {
+    if (isLowerCase) {
       if (encodeOffset < 0) {
         letterOffset = (((encodedCodeAscii - aInAsciiUpperCase) + encodeOffset % alphabetSize) + alphabetSize) % alphabetSize + aInAsciiUpperCase;
       } else {
         letterOffset = ((encodedCodeAscii - aInAsciiUpperCase + encodeOffset) % alphabetSize) + aInAsciiUpperCase;
       }
-    } else if (encodedCodeAscii >= aInAsciiLowerCase && encodedCodeAscii <= zInAsciiLowerCase) {
+    } else if (isUpperCase) {
       if (encodeOffset < 0) {
         letterOffset = (((encodedCodeAscii - aInAsciiLowerCase) + encodeOffset % alphabetSize) + alphabetSize) % alphabetSize + aInAsciiLowerCase;
       } else {
@@ -50,13 +52,15 @@ function encode(encodeOffset, encodeText) {
 function decode(decodeOffset, decodeText) {
   let decodeLetterOffset;
   let textDecode = '';
-
+  
   for (let i = 0; i < decodeText.length; i++) {
     let deCodeAscii = decodeText.charCodeAt(i);
+    const isLowerCase = deCodeAscii >= aInAsciiUpperCase && deCodeAscii <= zInAsciiUpperCase;
+    const isUpperCase = deCodeAscii >= aInAsciiLowerCase && deCodeAscii <= zInAsciiLowerCase;
 
-    if (deCodeAscii >= aInAsciiUpperCase && deCodeAscii <= zInAsciiUpperCase) {
+    if (isLowerCase) {
       decodeLetterOffset = (((deCodeAscii - aInAsciiUpperCase) - (decodeOffset % alphabetSize)) + alphabetSize) % alphabetSize + aInAsciiUpperCase;
-    } else if (deCodeAscii >= aInAsciiLowerCase && deCodeAscii <= zInAsciiLowerCase) {
+    } else if (isUpperCase) {
       decodeLetterOffset = (((deCodeAscii - aInAsciiLowerCase) - (decodeOffset % alphabetSize)) + alphabetSize) % alphabetSize + aInAsciiLowerCase;
     } else {
       decodeLetterOffset = deCodeAscii;
