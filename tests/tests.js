@@ -1,3 +1,5 @@
+const { encode, decode } = require('../src/cipher');
+
 function test(funcao, strOriginal, offset, resultadoEsperado) {
   let result = funcao(offset, strOriginal);
   if (result === resultadoEsperado) {
