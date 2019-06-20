@@ -4,7 +4,7 @@ const zInAsciiUpperCase = 90;
 const aInAsciiLowerCase = 97;
 const zInAsciiLowerCase = 122;
 
-function cipher() {
+const cipher = () => {
   const encondedOffset = parseInt(document.getElementById('encode-offset').value);
   const encodedText = document.getElementById('encode-text').value;
   const encodeResult = encode(encondedOffset, encodedText);
@@ -12,7 +12,7 @@ function cipher() {
   document.getElementById('encode-result').value = encodeResult;
 }
 
-function decipher() {
+const decipher = () => {
   const decodeOffset = parseInt(document.getElementById('decode-offset').value);
   const dText = document.getElementById('decode-text').value;
   const decodeResult = decode(decodeOffset, dText);
@@ -20,7 +20,7 @@ function decipher() {
   document.getElementById('decode-result').value = decodeResult;
 }
 
-function encode(encodeOffset, encodeText) {
+const encode = (encodeOffset, encodeText) => {
   let textEncode = '';
   let letterOffset;
   
@@ -49,7 +49,7 @@ function encode(encodeOffset, encodeText) {
   return textEncode;
 }
 
-function decode(decodeOffset, decodeText) {
+const decode = (decodeOffset, decodeText) => {
   let decodeLetterOffset;
   let textDecode = '';
   
