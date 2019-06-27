@@ -1,73 +1,73 @@
 const alphabetSize = 26;
-const aInAsciiUpperCase = 65;
-const zInAsciiUpperCase = 90;
-const aInAsciiLowerCase = 97;
-const zInAsciiLowerCase = 122;
+const aInAsciiUppercase = 65;
+const zInAsciiUppercase = 90;
+const aInAsciiLowercase = 97;
+const zInAsciiLowercase = 122;
 
 const cipher = () => {
-  const encondedOffset = parseInt(document.getElementById('encode-offset').value);
-  const encodedText = document.getElementById('encode-text').value;
-  const encodeResult = encode(encondedOffset, encodedText);
+  const offset = parseInt(document.getElementById('encode-offset').value);
+  const text = document.getElementById('encode-text').value;
+  const textEncoded = encode(offset, text);
 
-  document.getElementById('encode-result').value = encodeResult;
+  document.getElementById('encode-result').value = textEncoded;
 }
 
 const decipher = () => {
-  const decodeOffset = parseInt(document.getElementById('decode-offset').value);
-  const dText = document.getElementById('decode-text').value;
-  const decodeResult = decode(decodeOffset, dText);
+  const offset = parseInt(document.getElementById('decode-offset').value);
+  const text = document.getElementById('decode-text').value;
+  const textDecoded = decode(offset, text);
 
-  document.getElementById('decode-result').value = decodeResult;
+  document.getElementById('decode-result').value = textDecoded;
 }
 
-const encode = (encodeOffset, encodeText) => {
-  let textEncode = '';
+const encode = (encodeOffset, textToEncode) => {
+  let encodedText = '';
   let letterOffset;
   
-  for (let i = 0; i < encodeText.length; i++) {
-    let encodedCodeAscii = encodeText.charCodeAt(i);
-    const isLowerCase = encodedCodeAscii >= aInAsciiUpperCase && encodedCodeAscii <= zInAsciiUpperCase;
-    const isUpperCase = encodedCodeAscii >= aInAsciiLowerCase && encodedCodeAscii <= zInAsciiLowerCase;
+  for (let i in textToEncode) {
+    let codeAscii = textToEncode.charCodeAt(i);
+    const isLowercase = codeAscii >= aInAsciiUppercase && codeAscii <= zInAsciiUppercase;
+    const isUppercase = codeAscii >= aInAsciiLowercase && codeAscii <= zInAsciiLowercase;
 
-    if (isLowerCase) {
+    if (isLowercase) {
       if (encodeOffset < 0) {
-        letterOffset = (((encodedCodeAscii - aInAsciiUpperCase) + encodeOffset % alphabetSize) + alphabetSize) % alphabetSize + aInAsciiUpperCase;
+        letterOffset = (((codeAscii - aInAsciiUppercase) + encodeOffset % alphabetSize) + alphabetSize) % alphabetSize + aInAsciiUppercase;
       } else {
-        letterOffset = ((encodedCodeAscii - aInAsciiUpperCase + encodeOffset) % alphabetSize) + aInAsciiUpperCase;
+        letterOffset = ((codeAscii - aInAsciiUppercase + encodeOffset) % alphabetSize) + aInAsciiUppercase;
       }
-    } else if (isUpperCase) {
+    } else if (isUppercase) {
       if (encodeOffset < 0) {
-        letterOffset = (((encodedCodeAscii - aInAsciiLowerCase) + encodeOffset % alphabetSize) + alphabetSize) % alphabetSize + aInAsciiLowerCase;
+        letterOffset = (((codeAscii - aInAsciiLowercase) + encodeOffset % alphabetSize) + alphabetSize) % alphabetSize + aInAsciiLowercase;
       } else {
-        letterOffset = ((encodedCodeAscii - aInAsciiLowerCase + encodeOffset) % alphabetSize) + aInAsciiLowerCase;
+        letterOffset = ((codeAscii - aInAsciiLowercase + encodeOffset) % alphabetSize) + aInAsciiLowercase;
       }
     } else {
-      letterOffset = encodedCodeAscii;
+      letterOffset = codeAscii;
     }
-    textEncode = textEncode + String.fromCharCode(letterOffset);
+    encodedText = encodedText + String.fromCharCode(letterOffset);
   }
-  return textEncode;
+  return encodedText;
 }
 
-const decode = (decodeOffset, decodeText) => {
-  let decodeLetterOffset;
-  let textDecode = '';
+const decode = (decodeOffset, textToDecode) => {
+  let decodedText = '';
+  let letterOffset;
   
-  for (let i = 0; i < decodeText.length; i++) {
-    let deCodeAscii = decodeText.charCodeAt(i);
-    const isLowerCase = deCodeAscii >= aInAsciiUpperCase && deCodeAscii <= zInAsciiUpperCase;
-    const isUpperCase = deCodeAscii >= aInAsciiLowerCase && deCodeAscii <= zInAsciiLowerCase;
+  for (let i in textToDecode) {
+    let codeAscii = textToDecode.charCodeAt(i);
+    const isLowercase = codeAscii >= aInAsciiUppercase && codeAscii <= zInAsciiUppercase;
+    const isUppercase = codeAscii >= aInAsciiLowercase && codeAscii <= zInAsciiLowercase;
 
-    if (isLowerCase) {
-      decodeLetterOffset = (((deCodeAscii - aInAsciiUpperCase) - (decodeOffset % alphabetSize)) + alphabetSize) % alphabetSize + aInAsciiUpperCase;
-    } else if (isUpperCase) {
-      decodeLetterOffset = (((deCodeAscii - aInAsciiLowerCase) - (decodeOffset % alphabetSize)) + alphabetSize) % alphabetSize + aInAsciiLowerCase;
+    if (isLowercase) {
+      letterOffset = (((codeAscii - aInAsciiUppercase) - (decodeOffset % alphabetSize)) + alphabetSize) % alphabetSize + aInAsciiUppercase;
+    } else if (isUppercase) {
+      letterOffset = (((codeAscii - aInAsciiLowercase) - (decodeOffset % alphabetSize)) + alphabetSize) % alphabetSize + aInAsciiLowercase;
     } else {
-      decodeLetterOffset = deCodeAscii;
+      letterOffset = codeAscii;
     }
-    textDecode = textDecode + String.fromCharCode(decodeLetterOffset);
+    decodedText = decodedText + String.fromCharCode(letterOffset);
   }
-  return textDecode;
+  return decodedText;
 }
 
 document.getElementById('encode-text').addEventListener('input', cipher);
